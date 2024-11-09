@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.freelancecode.traprural.entities.funcionarioRural;
 
-public interface funtionarioRuralService {
+public interface funcionarioRuralService {
     List<funcionarioRural> findAll();
     funcionarioRural findById(Long id);
     funcionarioRural save(funcionarioRural funcionarioRural);
