@@ -1,29 +1,31 @@
 package com.freelancecode.traprural.implentacao;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import java.util.List;
-import com.freelancecode.traprural.entities.*;
-import com.freelancecode.traprural.repositories.*;
-import com.freelancecode.traprural.services.*;
+
+import com.freelancecode.traprural.entities.Equipamento;
+import com.freelancecode.traprural.repositories.EquipamentoRepository;
+import com.freelancecode.traprural.services.EquipamentoService;
 
 @Service
-public class equipamentoServiceImplementacao implements equipamentoService {
+public class EquipamentoServiceImplementacao implements EquipamentoService {
 
     @Autowired
-    private equipamentoRepository equipamentoRepository;
+    private EquipamentoRepository equipamentoRepository;
 
     @Override
-    public List<equipamento> findAll() {
+    public List<Equipamento> findAll() {
         return equipamentoRepository.findAll();
     }
 
     @Override
-    public equipamento findById(Long id) {
+    public Equipamento findById(Long id) {
         return equipamentoRepository.findById(id).orElse(null);
     }
 
     @Override
-    public equipamento save(equipamento equipamento) {
+    public Equipamento save(Equipamento equipamento) {
         return equipamentoRepository.save(equipamento);
     }
 

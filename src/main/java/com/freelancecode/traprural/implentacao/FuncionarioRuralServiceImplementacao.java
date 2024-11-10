@@ -1,29 +1,31 @@
 package com.freelancecode.traprural.implentacao;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import java.util.List;
-import com.freelancecode.traprural.entities.*;
-import com.freelancecode.traprural.repositories.*;
-import com.freelancecode.traprural.services.*;
+
+import com.freelancecode.traprural.entities.FuncionarioRural;
+import com.freelancecode.traprural.repositories.FuncionarioRepository;
+import com.freelancecode.traprural.services.FuncionarioRuralService;
 
 @Service
-public class funcionarioRuralServiceImplementacao implements funcionarioRuralService {
+public class FuncionarioRuralServiceImplementacao implements FuncionarioRuralService {
 
     @Autowired
-    private funcionarioRepository funcionarioRepository;
+    private FuncionarioRepository funcionarioRepository;
 
     @Override
-    public List<funcionarioRural> findAll() {
+    public List<FuncionarioRural> findAll() {
         return funcionarioRepository.findAll();
     }
 
     @Override
-    public funcionarioRural findById(Long id) {
+    public FuncionarioRural findById(Long id) {
         return funcionarioRepository.findById(id).orElse(null);
     }
 
     @Override
-    public funcionarioRural save(funcionarioRural funcionario) {
+    public FuncionarioRural save(FuncionarioRural funcionario) {
         return funcionarioRepository.save(funcionario);
     }
 
