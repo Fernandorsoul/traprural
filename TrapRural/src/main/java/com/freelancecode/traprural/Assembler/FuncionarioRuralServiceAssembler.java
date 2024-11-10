@@ -1,4 +1,4 @@
-package com.freelancecode.traprural.implentacao;
+package com.freelancecode.traprural.Assembler;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +9,7 @@ import com.freelancecode.traprural.repositories.FuncionarioRepository;
 import com.freelancecode.traprural.services.FuncionarioRuralService;
 
 @Service
-public class FuncionarioRuralServiceImplementacao implements FuncionarioRuralService {
+public class FuncionarioRuralServiceAssembler implements FuncionarioRuralService {
 
     @Autowired
     private FuncionarioRepository funcionarioRepository;

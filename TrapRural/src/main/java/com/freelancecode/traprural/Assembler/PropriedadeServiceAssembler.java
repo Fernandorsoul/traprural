@@ -1,4 +1,4 @@
-package com.freelancecode.traprural.implentacao;
+package com.freelancecode.traprural.Assembler;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import com.freelancecode.traprural.entities.PropriedadeRural;
 import com.freelancecode.traprural.repositories.PropriedadeRepository;
 import com.freelancecode.traprural.services.PropriedadeService;
 @Service
-public class PropriedadeServiceImplementacao implements PropriedadeService {
+public class PropriedadeServiceAssembler implements PropriedadeService {
 	
 	
 
