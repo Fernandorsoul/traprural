@@ -2,11 +2,11 @@ package com.freelancecode.traprural.services;
 
 import java.util.List;
 
-import com.freelancecode.traprural.entities.funcionarioRural;
+import com.freelancecode.traprural.entities.FuncionarioRural;
 
-public interface funcionarioRuralService {
-    List<funcionarioRural> findAll();
-    funcionarioRural findById(Long id);
-    funcionarioRural save(funcionarioRural funcionarioRural);
+public interface FuncionarioRuralService {
+    List<FuncionarioRural> findAll();
+    FuncionarioRural findById(Long id);
+    FuncionarioRural save(FuncionarioRural funcionarioRural);
     void deleteById(Long id);
 }

@@ -2,11 +2,11 @@ package com.freelancecode.traprural.services;
 
 import java.util.List;
 
-import com.freelancecode.traprural.entities.propriedadeRural;
+import com.freelancecode.traprural.entities.PropriedadeRural;
 
-public interface propriedadeService {
-    List<propriedadeRural> findAll();
-    propriedadeRural findById(Long id);
-    propriedadeRural save(propriedadeRural propriedade);
+public interface PropriedadeService {
+    List<PropriedadeRural> findAll();
+    PropriedadeRural findById(Long id);
+    PropriedadeRural save(PropriedadeRural propriedade);
     void deleteById(Long id);
 }
